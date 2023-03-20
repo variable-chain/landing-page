@@ -85,9 +85,9 @@ function Contact(props) {
         <ContactWrapper id='contact'>
             <p>Contact</p>
             <div className = 'contact_card_container'>
-            <ContactCard icon={twitter} name = 'Twitter' linkText='Follow' link = '' />
+            <ContactCard icon={twitter} name = 'Twitter' linkText='Follow' link = 'https://twitter.com/Variabledex' />
             <ContactCard icon={discord} name = 'Discord' linkText='Join Now' link = 'https://discord.gg/34EMRamDct' />
-            <ContactCard icon={telegram} name = 'Telegram' linkText='Join Now' link = '' />
+            <ContactCard icon={telegram} name = 'Telegram' linkText='Join Now' link = 'https://t.me/variabledex' />
             </div>
         </ContactWrapper>
     );

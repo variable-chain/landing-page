@@ -36,6 +36,7 @@ const NavWrapper = styled.nav`
             padding: 1rem 2.5rem;
             display: flex ;
             flex-direction: row;
+            text-decoration: none;
             
             img{
                 margin-right: 1rem;
@@ -69,7 +70,7 @@ const Navbar = () => {
                 <span onClick={scrollToAbout}>About Us</span>
                 {/* <span>Blog</span> */}
                 <span onClick = {scrollToCommunity}>Community</span>
-                <span className = 'followbtn'><img src = {twitter} />Follow Us</span>
+                <a href = 'https://twitter.com/Variabledex' className = 'followbtn'><img src = {twitter} />Follow Us</a>
             </div>
 
 

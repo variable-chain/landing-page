@@ -157,8 +157,8 @@ function App() {
 
       <div className="heading_bottom" ref={headingBottomRef}><span>Join the variable community to stay updated.</span>
       <a href = 'https://discord.gg/34EMRamDct'><img src={discord} /></a>
-      <img src={twitter_blue} />
-      <img src={telegram} />
+      <a href = 'https://twitter.com/Variabledex'><img src={twitter_blue} /></a>
+      <a href = 'https://t.me/variabledex'><img src={telegram} /></a>
       </div>
       </div>
 
