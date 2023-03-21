@@ -32,6 +32,11 @@ const SecondScreenWrapper = styled.div`
     align-items: center;
     height: 200vh;
     overflow: hidden;
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .heading{
         display: flex;
         flex-direction: column;
@@ -55,6 +60,7 @@ const SecondScreenWrapper = styled.div`
     .center{
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 90vw;
         .left, .screen, .right{
             display: flex;
@@ -89,6 +95,10 @@ const SecondScreenWrapper = styled.div`
     }
 
     .s2{
+
+        .center{
+            height: 80vh;
+        }
         
         .heading{
             margin-top: 6rem;
@@ -145,8 +155,8 @@ const SecondScreen = () => {
           gsap.to(".screen", {
             ease: "easeIn",
             scrollTrigger: {
-              trigger: ".frame",
-              start: "center center",
+              trigger: ".backdrop",
+              start: "top top",
               end: "+=100%",
               pin: '.backdrop'
             }
@@ -182,6 +192,8 @@ const SecondScreen = () => {
         <SecondScreenWrapper>
             <div className='s1' id = 'about'>
             <div className='backdrop'></div>
+
+
             <div className = "heading">
                 <p className = 'h1'>What is Variable?</p>
                 <p>A state-of-the-art Layer 3 Derivatives DEX that operates as a Validium AppChain built on top of the Layer 2 scaling solution StarkNet.</p>
@@ -245,8 +257,6 @@ const SecondScreen = () => {
                 </div>
             </div>
 
-            <div className='bottom'>
-            </div>
             </div>
         </SecondScreenWrapper>
     );
