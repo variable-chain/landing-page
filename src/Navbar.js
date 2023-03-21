@@ -17,6 +17,10 @@ const NavWrapper = styled.nav`
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
 
+  .logo{
+    width: 10rem;
+  }
+
   div{
         span{
             margin: 0 2rem;
@@ -36,6 +40,8 @@ const NavWrapper = styled.nav`
             padding: 1rem 2.5rem;
             display: flex ;
             flex-direction: row;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
             
             img{
@@ -64,7 +70,7 @@ const Navbar = () => {
     }
     return (
         <NavWrapper>
-            <img src = {logo} />
+            <img className = 'logo' src = {logo} />
             
             <div className='navlinks'>
                 <span onClick={scrollToAbout}>About Us</span>

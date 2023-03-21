@@ -1,13 +1,12 @@
 import React, {useEffect, useRef} from "react";
 import Navbar from "./Navbar";
-import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
 import styled from "styled-components";
 
 import Colors from "./Palette";
 
 import starkware from './assets/starkware.png'
 import nothing_phone from './assets/nothing_phone.svg'
-import background from './assets/background.png'
+import background from './assets/background.svg'
 import twitter_blue from './assets/twitter_blue.png'
 import discord from './assets/discord.png'
 import telegram from './assets/telegram.png'
@@ -27,7 +26,6 @@ const HomeWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   overflow: hidden ;
-
 
   .first_screen{
     height: 90vh;
@@ -50,6 +48,8 @@ const HomeWrapper = styled.div`
       
       img{
         margin-left: 0.5rem;
+        width: 0.8rem;
+
       }
   }
   }
@@ -58,6 +58,7 @@ const HomeWrapper = styled.div`
     text-align:center ;
     width: 20rem ;
     margin-top: 5rem ;
+    
     .heading{
       margin-top: 0.4rem ;
       font-size: 1.6rem;
@@ -75,14 +76,14 @@ const HomeWrapper = styled.div`
 
       .nothing_phone{
         position: relative ;
-       // width: 20rem;
+        width: 20rem;
 
       }
 
       .background{
         position: absolute ;
         z-index: -1 ;
-       // width: 18rem;
+        width: 18rem;
 
       }
     }
@@ -106,6 +107,7 @@ const HomeWrapper = styled.div`
     }
     img{
       margin: 0 0.6rem;
+      width: 1.4rem;
     }
   }
 

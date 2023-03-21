@@ -44,7 +44,7 @@ const ContactWrapper = styled.div`
             color: rgba(65, 71, 91, 1);
             font-family: 'ClashDisplay-Variable';
             font-weight: 500;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-left: 2rem;
         }
     }
@@ -52,14 +52,14 @@ const ContactWrapper = styled.div`
         a{
             font-family: 'Inter';
             text-decoration: none;
-            width: 16rem;
+            width: 12rem;
             text-align: center;
             background-color: ${Colors.blue};
-            padding: 1.6rem 0;
+            padding: 1.2rem 0;
             color: white;
-            font-size: 2rem;
+            font-size: 1.6rem;
 
-            font-weight: 700;
+            font-weight: 600;
             margin: 1.2rem;
         }
     }
