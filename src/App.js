@@ -15,6 +15,8 @@ import Slideshow from "./Components/Sliding";
 import SecondScreen from "./SecondScreen";
 import ThirdScreen from "./ThirdScreen";
 
+import ComingSoon from "./ComingSoon";
+
 
 import gsap from "gsap";
 import Contact from "./Contact";
@@ -58,7 +60,7 @@ const HomeWrapper = styled.div`
     text-align:center ;
     width: 20rem ;
     margin-top: 5rem ;
-    
+
     .heading{
       margin-top: 0.4rem ;
       font-size: 1.6rem;
@@ -141,7 +143,8 @@ function App() {
 
 
 
-  return (
+  const Home = () => {
+    return (
     <HomeWrapper>
       <Navbar />
 
@@ -171,6 +174,12 @@ function App() {
       <Contact />
       </HomeWrapper>
   );
+}
+
+return (
+  <ComingSoon />
+)
+
 }
 
 export default App;

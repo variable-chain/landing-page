@@ -17,6 +17,45 @@ const NavWrapper = styled.nav`
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
 
+
+
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
   .logo{
     width: 10rem;
   }
@@ -43,6 +82,7 @@ const NavWrapper = styled.nav`
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            margin-left: 2rem;
             
             img{
                 margin-right: 1rem;
@@ -69,13 +109,13 @@ const Navbar = () => {
         //gsap.to($(window), {duration: 2, scrollTo:"#about"});
     }
     return (
-        <NavWrapper>
+        <NavWrapper className='nav_wrapper'>
             <img className = 'logo' src = {logo} />
             
             <div className='navlinks'>
-                <span onClick={scrollToAbout}>About Us</span>
+                <span className = 'tooltip' onClick={scrollToAbout}>About Us<span class="tooltiptext">Coming Soon!</span></span>
                 {/* <span>Blog</span> */}
-                <span onClick = {scrollToCommunity}>Community</span>
+                <span className = 'tooltip' onClick = {scrollToCommunity}>Community<span class="tooltiptext">Coming Soon!</span></span>
                 <a href = 'https://twitter.com/Variabledex' className = 'followbtn'><img src = {twitter} />Follow Us</a>
             </div>
 
