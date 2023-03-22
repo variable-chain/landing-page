@@ -60,6 +60,9 @@ const NavWrapper = styled.nav`
     width: 10rem;
   }
 
+
+
+
   div{
         span{
             margin: 0 2rem;
@@ -86,9 +89,32 @@ const NavWrapper = styled.nav`
             
             img{
                 margin-right: 1rem;
+                width: 1.5rem;
             }
         }
   }
+
+
+
+  @media screen and (max-device-width: 640px) {
+    justify-content: center;
+    margin-top: 2rem;
+      div{
+        span{
+          margin: 0 1rem;
+        }
+      }
+
+      .navlinks{
+        display: none;
+      }
+
+      .followbtn{
+        img{
+          margin-right: 0.5rem;
+        }
+      }
+    }
 `
 
 

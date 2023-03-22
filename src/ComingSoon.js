@@ -21,6 +21,10 @@ const ComingSoonWrapper = styled.div`
     width: 100vw;
     flex-direction: column;
 
+
+
+
+
     .nav_wrapper{
         box-shadow: none;
     }
@@ -94,12 +98,47 @@ const ComingSoonWrapper = styled.div`
   .stores{
     display: flex;
     justify-content: center;
-    img{
+    img:first-child {
         margin-right: 2rem;
     }
   }
 
   }
+
+
+
+  @media screen and (max-device-width: 840px) {
+      .content{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+      }
+
+      .first_heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+
+        .heading{
+          text-align: center;
+        }
+      }
+
+      .hero{
+        img{
+          width: 40rem;
+        }
+      }
+
+      .stores{
+        img{
+          width: 12rem;
+        }
+      }
+    }
 
 
 `
